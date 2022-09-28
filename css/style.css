@@ -9,7 +9,7 @@ body{
 }
 
 main{
-  height: calc(100% - 180px) ;
+  height: calc(100vh - 180px) ;
 }
 
 .d-flex{
@@ -32,16 +32,16 @@ main{
 .sidenav{
   width: 230px;
   padding: 0;
+  height: calc(100vh - 90px);
   /* margin-bottom: 90px; */
+  float: left;
 }
 
 header{
-  position: fixed;
   top:0;
   right: 0px;
   width: calc(100% - 230px);
   height: 90px;
-  z-index: 999;
   /* overflow: auto; */
 }
 
@@ -58,7 +58,6 @@ header{
 .container{
   /* position: relative; */
   width: 100%;
-  margin: 90px 0px 90px 0;
 }
 
 .row{
@@ -68,7 +67,7 @@ header{
 
 .col-dt-16{
   width: calc(100% / 6);
-  /* max-width: 180px; */
+  max-width: 180px;
   height: 280px;
   margin: 8px;
 
