@@ -25,6 +25,10 @@ ul{
   list-style: none;
 }
 
+h6{
+  font-size:.6rem;
+}
+
 /************************************************
      UTILITIES
  ************************************************/
@@ -82,7 +86,7 @@ ul{
 }
 
 .sidenav .nav-desktop .logo img{
-  width: 80%;
+  width: 140%;
   vertical-align: middle;
   padding: 10px;
 }
@@ -103,10 +107,6 @@ header{
   height: 60px;
   width: 100%;
   text-align: center;
-}
-
-.menu nav ul li{
-  /* display: inline-block; */
 }
 
 .container{
