@@ -251,6 +251,10 @@ header button{
   margin-bottom: 12px;
 }
 
+.card.round img{
+  border-radius: 50%;
+}
+
 footer{
   height: 90px;
 }
