@@ -87,7 +87,6 @@ i{
   width: 230px;
   padding: 0;
   height: calc(100vh - 90px);
-  /* margin-bottom: 90px; */
   float: left;
   text-align: left;
   flex-direction: column;
@@ -119,7 +118,7 @@ i{
 }
 
 .sidenav .nav-desktop-playlist ul{
-  height: calc(100vh - 420px);
+  height: calc(100vh - 450px);
   overflow-y: auto;
 }
 
@@ -142,23 +141,22 @@ margin: 20px 0 12px 0;
   vertical-align: middle;
 }
 
-.sidenav-bottom a:first-child {
-  height: 1rem;
+.sidenav-bottom .download-app img{
+  height: 1.2rem;
 }
 
 .sidenav-bottom img{
   margin-right: 10px;
 }
 
-.sidenav-bottom h6{
-  line-height: 20px;
-  vertical-align: middle;
+.sidenav-bottom .my-profile img{
+  background-color: #808080;
+  border-radius: 50%;
 }
 
-/* .sidenav-bottom {
-  background-color: #808080;
-  padding: 10px 0 10px 0;
-  height: 3rem;
+/* .sidenav-bottom h6{
+  line-height: 20px;
+  vertical-align: middle;
 } */
 
 
@@ -313,6 +311,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 90%
   }
 
   .sidenav .nav-mobile img{
@@ -322,6 +321,10 @@ footer{
   
   .sidenav .nav-desktop{
     display: none;
+  }
+
+  .sidenav-bottom{
+    justify-content: center;
   }
 
   .sidenav-bottom h6{
