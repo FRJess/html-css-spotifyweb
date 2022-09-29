@@ -94,7 +94,7 @@ i{
 }
 
 .sidenav .nav-desktop{
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .sidenav .nav-desktop ul li{
@@ -115,7 +115,7 @@ i{
 .sidenav .nav-desktop .logo img{
   width: 80%;
   vertical-align: middle;
-  padding: 10px;
+  padding-top: 10px;
 }
 
 .sidenav .nav-desktop-playlist ul{
@@ -202,9 +202,10 @@ header button{
 }
 
 .menu ul li{
-  padding: 0 9px;
+  padding: 0 10px;
   align-content: center;
   line-height: 20px;
+  text-transform: uppercase;
  }
 
 .container{
@@ -225,7 +226,8 @@ header button{
 .col{
   width: calc(100% / 6);
   /* min-width: 180px; */
-  padding: 0 16px 0px 0;
+  /* padding: 0 16px 0px 0; */
+  margin: 0 8px 8px 0
 }
 
 .card.album{
@@ -267,7 +269,7 @@ footer{
 
 @media screen and (max-width: 768px) {
   .col-tb-25{
-    width: 25%;
+    width: calc(100%/4 - 10px);
   }
 
   .row{
@@ -287,7 +289,7 @@ footer{
   }
 
   .col-mb-50{
-    min-width: 50%;
+    width: calc(100%/2 - 10px);
   }
 
   .row{
