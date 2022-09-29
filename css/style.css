@@ -17,9 +17,9 @@ main{
   overflow:scroll;
 }
 
-img{
+/* img{
   width: 100%;
-}
+} */
 
 a{
   text-decoration: none;
@@ -79,6 +79,7 @@ i{
   /* margin-bottom: 90px; */
   float: left;
   text-align: left;
+  flex-direction: column;
 }
 
 .sidenav .nav-desktop{
@@ -106,37 +107,49 @@ i{
   padding: 10px;
 }
 
-.sidenav .nav-desktop .nav-desktop-playlist{
-  overflow-y: scroll;
+.sidenav .nav-desktop-playlist ul{
+  height: calc(100vh - 420px);
+  overflow-y: auto;
 }
 
 .sidenav .nav-desktop-playlist .list-name{
 margin: 20px 0 12px 0;
 }
 
-
 .sidenav .nav-desktop-playlist h4{
   margin-bottom: 20px;
 }
 
 .sidenav-bottom{
-  display: flex;
-  align-items: center;
+  margin-left: 10px;
 }
 
 .sidenav-bottom a{
-  font-size: 0.6rem;
-  /* line-height: 20px; */
+  display: flex;
+  line-height: 20px;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.sidenav-bottom a:first-child {
+  height: 1rem;
 }
 
 .sidenav-bottom img{
-  height: 1rem;
-  display: inline;
+  margin-right: 10px;
 }
 
 .sidenav-bottom h6{
-  display: inline;
+  line-height: 20px;
+  vertical-align: middle;
 }
+
+/* .sidenav-bottom {
+  background-color: #808080;
+  padding: 10px 0 10px 0;
+  height: 3rem;
+} */
+
 
 .sidenav .nav-mobile{
   display: none;
@@ -144,8 +157,8 @@ margin: 20px 0 12px 0;
 
 /* header */
 header{
-  top:0;
-  right: 0px;
+  /* top:0;
+  right: 0px; */
   width: calc(100% - 230px);
   height: 90px;
 }
@@ -240,6 +253,10 @@ footer{
   }
   
   .sidenav .nav-desktop{
+    display: none;
+  }
+
+  .sidenav-bottom h6{
     display: none;
   }
 
