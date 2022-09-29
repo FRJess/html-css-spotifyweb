@@ -21,6 +21,10 @@ img{
   width: 100%;
 }
 
+a{
+  text-decoration: none;
+}
+
 ul{
   list-style: none;
 }
@@ -110,8 +114,28 @@ i{
 margin: 20px 0 12px 0;
 }
 
+
 .sidenav .nav-desktop-playlist h4{
   margin-bottom: 20px;
+}
+
+.sidenav-bottom{
+  display: flex;
+  align-items: center;
+}
+
+.sidenav-bottom a{
+  font-size: 0.6rem;
+  /* line-height: 20px; */
+}
+
+.sidenav-bottom img{
+  /* height: 1rem; */
+  display: inline;
+}
+
+.sidenav-bottom h6{
+  display: inline;
 }
 
 .sidenav .nav-mobile{
