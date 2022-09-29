@@ -10,11 +10,14 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
+  background-color: #080B12;
+  color: white;
 }
 
 main{
   height: calc(100vh - 180px) ;
   overflow:scroll;
+  background-color: #141922;
 }
 
 /* img{
@@ -23,6 +26,7 @@ main{
 
 a{
   text-decoration: none;
+  color: white;
 }
 
 ul{
@@ -69,10 +73,10 @@ i{
   text-transform: uppercase;
 }
 
-.debug{
+/* .debug{
   border: 1px solid black;
   background-color: lightcoral;
-}
+} */
 
 /************************************************
      SITE SECTIONS
@@ -205,19 +209,17 @@ header button{
 
 .container{
   width: 100%;
+  padding: 20px;
 }
 
 .container .section-title{
-  margin: 0 0 13px 20px;
-}
-
-.container .section-under{
-  margin-left: 20px;
+  margin-bottom: 12px;
 }
 
 .row{
   width: 100%;
-  margin: 20px 0 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .col{
