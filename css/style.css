@@ -29,6 +29,11 @@ h6{
   font-size:.6rem;
 }
 
+i{
+  margin-right: 10px;
+}
+
+
 /************************************************
      UTILITIES
  ************************************************/
@@ -47,6 +52,10 @@ h6{
 
 .wrap{
   flex-wrap: wrap;
+}
+
+.upper{
+  text-transform: uppercase;
 }
 
 .debug{
@@ -68,16 +77,19 @@ h6{
   text-align: left;
 }
 
+.sidenav .nav-desktop{
+  margin-left: 10px;
+}
+
 .sidenav .nav-desktop ul li{
-  align-items: flex-start;
-  margin: 0 0 10px 10px;
+  margin-bottom: 10px;
   line-height: 25px;
 }
 
 .sidenav .nav-desktop img{
   width: 25px;
   margin-right: 10px;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .sidenav .nav-desktop .logo {
@@ -88,6 +100,18 @@ h6{
   width: 80%;
   vertical-align: middle;
   padding: 10px;
+}
+
+.sidenav .nav-desktop .nav-desktop-playlist{
+  overflow-y: scroll;
+}
+
+.sidenav .nav-desktop-playlist .list-name{
+margin: 20px 0 12px 0;
+}
+
+.sidenav .nav-desktop-playlist h4{
+  margin-bottom: 20px;
 }
 
 .sidenav .nav-mobile{
@@ -184,7 +208,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding
   }
 
   .sidenav .nav-mobile img{
