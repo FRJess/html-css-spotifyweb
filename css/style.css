@@ -29,6 +29,11 @@ ul{
   list-style: none;
 }
 
+h2{
+  font-size: 1.5rem;
+
+}
+
 h6{
   font-size:.6rem;
 }
@@ -36,7 +41,6 @@ h6{
 i{
   margin-right: 10px;
 }
-
 
 /************************************************
      UTILITIES
@@ -175,12 +179,26 @@ header button{
   margin-right: 6px;
 }
 
+/* main */
 
 .menu{
   height: 60px;
   width: 100%;
-  text-align: center;
+  justify-content: center;
+  
 }
+
+.menu ul{
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.menu ul li{
+  padding: 0 9px;
+  align-content: center;
+  line-height: 20px;
+ }
 
 .container{
   width: 100%;
@@ -247,7 +265,6 @@ footer{
   header{
     width: calc(100% - 50px);
   }
-
 
   .sidenav{
     width: 50px;
