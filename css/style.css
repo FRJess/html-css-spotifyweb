@@ -28,8 +28,8 @@ a{
   text-decoration: none;
 }
 
-a:hover a:active{
-  color: red;
+a:hover *, a:active *, li:hover a * {
+  color: white;
 }
 
 ul{
@@ -95,10 +95,6 @@ i{
   text-align: left;
   flex-direction: column;
 }
-
-/* .sidenav .nav-desktop{
-  margin-left: 20px;
-} */
 
 .sidenav .nav-desktop ul li{
   margin-bottom: 10px;
@@ -198,16 +194,19 @@ i{
 /* header */
 
 header{
-  /* top:0;
+  /* position: fixed;
+  z-index: 998;
+  top:0;
   right: 0px; */
   width: calc(100% - 230px);
   height: 90px;
   align-items:center;
   justify-content: flex-end;
+  background-color: #080B12;
 }
 
 header button{
-  background-color: Transparent;
+  background-color: transparent;
   border: 1px solid white;
   padding: 12px 40px;
   border-radius: 40px;
@@ -254,7 +253,7 @@ header button h6{
   border-bottom:2px solid #141922;
 }
 
-.menu ul li:hover{
+.menu ul li:hover h6{
   color: white;
 }
 
