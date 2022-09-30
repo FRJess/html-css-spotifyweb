@@ -308,7 +308,7 @@ footer{
 }
 
 .menu-center{
-  width: 50%;
+  width: 60%;
   flex-direction: column;
   justify-content: flex-start;
   font-size: 1rem;
@@ -322,9 +322,13 @@ footer{
 }
 
 footer .song-playing{
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height:1rem;
+}
+
+footer .song-playing span{
+  margin: 0 20px;
 }
 
 .menu-center .line{
