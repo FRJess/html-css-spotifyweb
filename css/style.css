@@ -14,12 +14,6 @@ body{
   color: white;
 }
 
-main{
-  height: calc(100vh - 180px) ;
-  overflow-y:scroll;
-  background-color: #141922;
-}
-
 img{
   max-width: 100%;
 }
@@ -28,12 +22,12 @@ a{
   text-decoration: none;
 }
 
-a:hover *, a:active *, li:hover a * {
-  color: white;
-}
-
 ul{
   list-style: none;
+}
+
+a:hover *, a:active *, li:hover a * {
+  color: white;
 }
 
 h2{
@@ -42,6 +36,10 @@ h2{
 
 h4{
   font-size: 1.2rem;
+}
+
+h5{
+  font-size: 1rem;
 }
 
 h6{
@@ -77,16 +75,12 @@ i{
   text-transform: uppercase;
 }
 
-/* .debug{
-  border: 1px solid black;
-  background-color: lightcoral;
-} */
-
 /************************************************
      SITE SECTIONS
  ************************************************/
 
-/* sidebar */
+/* SIDENAV */
+
 .sidenav{
   width: 230px;
   padding: 0;
@@ -104,7 +98,6 @@ i{
 .sidenav .nav-desktop img{
   width: 25px;
   margin-right: 10px;
-  /* vertical-align: middle; */
 }
 
 .sidenav .nav-desktop .logo {
@@ -191,7 +184,7 @@ i{
   color: white;
 }
 
-/* header */
+/* HEADER */
 
 header{
   /* position: fixed;
@@ -223,7 +216,13 @@ header button h6{
   color: white;
 }
 
-/* main */
+/* MAIN */
+
+main{
+  height: calc(100vh - 180px) ;
+  overflow-y:scroll;
+  background-color: #141922;
+}
 
 .menu{
   height: 70px;
@@ -576,6 +575,5 @@ footer .line{
     content: ' ';
     display: none;
   }
-
 }
   
