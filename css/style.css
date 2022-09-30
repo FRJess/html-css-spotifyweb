@@ -20,9 +20,9 @@ main{
   background-color: #141922;
 }
 
-/* img{
-  width: 100%;
-} */
+img{
+  max-width: 100%;
+}
 
 a{
   text-decoration: none;
@@ -269,8 +269,41 @@ header button{
   border-radius: 50%;
 }
 
+/* FOOTER */
+
 footer{
   height: 90px;
+}
+
+.menu-left{
+  height: 100%;
+  align-items: center;
+  width:20%;
+  flex-wrap: nowrap;
+}
+
+.menu-left .currently-playing{
+  height: 100%;
+  align-items: center;
+  min-width: 70%;
+}
+
+.menu-left .currently-playing img{
+  height: 100%;
+}
+
+.menu-left .currently-playing-info{
+  height: 100%;
+  min-width: 40%;
+  padding: 17px 0;
+  margin-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu-left .currently-playing-info h5, h6{
+
 }
 
 /************************************************
