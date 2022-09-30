@@ -42,7 +42,7 @@ h4{
 }
 
 h6{
-  font-size:.6rem;
+  font-size:.9rem;
 }
 
 i{
@@ -118,7 +118,7 @@ i{
 }
 
 .sidenav .nav-desktop-playlist ul{
-  height: calc(100vh - 450px);
+  height: calc(100vh - 490px);
   overflow-y: auto;
 }
 
@@ -137,21 +137,32 @@ margin: 20px 0 12px 0;
 .sidenav-bottom a{
   display: flex;
   line-height: 20px;
-  height: 2rem;
-  vertical-align: middle;
-}
+  height: 2.4rem;
+  align-items: center;
+  margin-top: 14px;
 
-.sidenav-bottom .download-app img{
-  height: 1.2rem;
 }
 
 .sidenav-bottom img{
   margin-right: 10px;
 }
 
+.sidenav-bottom .download-app img{
+  height: 1.2rem;
+}
+
 .sidenav-bottom .my-profile img{
   background-color: #808080;
   border-radius: 50%;
+  height: 2rem;
+}
+
+.sidenav-bottom .download-app::after{
+  content: ' ';
+  display: block;
+  margin:5px 15px;
+  border-bottom:1px solid rgb(189,189,189);
+  width:80%;
 }
 
 /* .sidenav-bottom h6{
@@ -227,6 +238,7 @@ header button{
   /* padding: 0 16px 0px 0; */
   margin: 0 8px 8px 0
 }
+
 
 /* .card.album{
   height: 310px;
@@ -328,6 +340,11 @@ footer{
   }
 
   .sidenav-bottom h6{
+    display: none;
+  }
+
+  .sidenav-bottom .download-app::after{
+    content: ' ';
     display: none;
   }
 
