@@ -171,11 +171,6 @@ i{
   width:88%;
 }
 
-/* .sidenav-bottom h6{
-  line-height: 20px;
-  vertical-align: middle;
-} */
-
 .sidenav .nav-mobile{
   display: none;
 }
@@ -329,6 +324,7 @@ footer{
   justify-content: space-evenly;
   align-items: center;
   padding: 10px 0;
+  font-size: 1.4rem;
 }
 
 footer .song-playing{
