@@ -345,7 +345,11 @@ main{
 /* FOOTER */
 
 footer{
+  position: fixed;
+  width: 100vw;
   height: 90px;
+  z-index: 998;
+  background-color: #282828;
 }
 
 .menu-left{
@@ -368,12 +372,17 @@ footer{
 
 .menu-left .currently-playing-info{
   height: 100%;
-  min-width: 40%;
+  min-width: 60%;
   padding: 24px 0;
   margin-left: 14px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.menu-left .currently-playing-icon{
+  min-width: 20%;
+  justify-content: flex-end;
 }
 
 .menu-left .currently-playing-icon i{
@@ -521,6 +530,7 @@ footer .line{
 
   .menu-left .currently-playing-icon{
     flex-direction: column;
+    padding-left: 20px;
   }
 
   .menu-center{
@@ -571,9 +581,25 @@ footer .line{
     display: none;
   }
 
+  .sidenav-bottom .download-app img{
+    height: 1.5rem;
+  }
+
   .sidenav-bottom .download-app::after{
     content: ' ';
     display: none;
+  }
+
+  .menu-right{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+  .menu-right .menu-right-icons{
+    margin:0 auto 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
   }
 }
   
