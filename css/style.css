@@ -46,7 +46,7 @@ h4{
 
 h6{
   font-size:.9rem;
-  color: #7D7F84;
+  color: #7C7E83;
 }
 
 i{
@@ -121,7 +121,7 @@ i{
 }
 
 .sidenav .nav-desktop-top ul li:hover, .sidenav .nav-desktop-top ul li:active{
-  border-left: 3px solid #BBFF5A;
+  border-left: 3px solid #2CFF00;
 }
 
 .sidenav .nav-desktop .logo img{
@@ -253,7 +253,7 @@ header button h6{
  .menu ul li:hover, .menu ul li:active{
   content: ' ';
   display: block;
-  border-bottom: 2px solid #BBFF5A;
+  border-bottom: 2px solid #2CFF00;
 }
 
 .container{
@@ -271,40 +271,67 @@ header button h6{
   margin-bottom: 40px;
 }
 
-.col{
+.card{
   width: calc(100% / 6);
   /* min-width: 180px; */
   /* padding: 0 16px 0px 0; */
-  margin: 0 8px 8px 0
-}
-
-
-/* .card.album{
-  height: 310px;
-}
-
-.card.playlist{
-  height: 220px
-} */
-
-.card{
-  width: 100%;
+  margin: 0 8px 8px 0;
   height: 100%;
   text-align: center;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  text-align: center;
 }
 
-.card img{
+.album-cover{
   width: 100%;
   margin-bottom: 18px;
 }
 
-.card h4{
+.album-cover img{
+  width: 100%;
+}
+
+.album-info{
+  padding: 5px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.album-info h4{
   margin-bottom: 12px;
 }
 
-.card.round img{
+.overlay-play{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+}
+
+.overlay-play i{
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.album-cover:hover .overlay-play{
+  opacity: 1;
+}
+
+
+
+.album-cover.round img{
   border-radius: 50%;
 }
 
