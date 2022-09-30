@@ -120,7 +120,7 @@ i{
   border-left: 3px solid #080B12;
 }
 
-.sidenav .nav-desktop-top ul li:hover, .sidenav .nav-desktop-top ul li:active{
+.sidenav .nav-desktop-top ul li:active{
   border-left: 3px solid #2CFF00;
 }
 
@@ -191,6 +191,10 @@ i{
   display: none;
 }
 
+.nav-desktop-playlist a:hover{
+  color: white;
+}
+
 /* header */
 
 header{
@@ -250,7 +254,11 @@ header button h6{
   border-bottom:2px solid #141922;
 }
 
- .menu ul li:hover, .menu ul li:active{
+.menu ul li:hover{
+  color: white;
+}
+
+ .menu ul li:active{
   content: ' ';
   display: block;
   border-bottom: 2px solid #2CFF00;
@@ -273,20 +281,18 @@ header button h6{
 
 .card{
   width: calc(100% / 6);
-  /* min-width: 180px; */
-  /* padding: 0 16px 0px 0; */
   margin: 0 8px 8px 0;
   height: 100%;
   text-align: center;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
   text-align: center;
 }
 
 .album-cover{
   width: 100%;
   margin-bottom: 18px;
+  position: relative;
 }
 
 .album-cover img{
@@ -318,6 +324,7 @@ header button h6{
 .overlay-play i{
   color: white;
   width: 100%;
+  font-size: 10vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -329,7 +336,9 @@ header button h6{
   opacity: 1;
 }
 
-
+.album-cover:hover{
+  filter: brightness(50%);
+}
 
 .album-cover.round img{
   border-radius: 50%;
@@ -423,6 +432,11 @@ footer .line{
   width:50%;
   height:5px;
   align-items: flex-end;
+}
+
+.currently-playing-info h6:hover{
+  text-decoration: underline;
+  color: white;
 }
 
 
