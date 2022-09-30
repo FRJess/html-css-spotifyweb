@@ -382,6 +382,11 @@ footer{
   width: 1rem;
   justify-content: flex-start;
   margin:5px;
+  color: #878787;
+}
+
+.menu-left .currently-playing-icon i:hover{
+  color: white;
 }
 
 .menu-center{
@@ -397,6 +402,18 @@ footer{
   align-items: center;
   padding: 10px 0;
   font-size: 1.4rem;
+}
+
+.menu-center .player-option:hover{
+  cursor:pointer;
+}
+
+.menu-center .player-option :nth-child(3):hover{
+  transform: scale(1.1);
+}
+
+.song-playing .line{
+  background-color: rgb(72,72,72);
 }
 
 footer .song-playing{
