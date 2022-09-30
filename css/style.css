@@ -412,23 +412,49 @@ footer{
   transform: scale(1.1);
 }
 
-.song-playing .line{
-  background-color: rgb(72,72,72);
-}
-
 footer .song-playing{
   justify-content: center;
   align-items: center;
   height:1rem;
 }
 
-footer .song-playing span{
-  margin: 0 20px;
-}
-
-.menu-center .line{
+.song-playing .line{
+  background-color: rgb(72,72,72);
   width:60%;
   height:5px;
+}
+
+.now-playing-line{
+  background-color: white;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  border-radius:4px;
+}
+
+.now-playing-dot{
+  width:12px;
+  height:12px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right:-2px;
+  top:-4px;
+  display: none;
+}
+
+.song-playing .line:hover .now-playing-dot{
+  display: block;
+  cursor: pointer;
+}
+
+.song-playing .line:hover .now-playing-line{
+  background-color: #2CFF00;
+}
+
+
+footer .song-playing span{
+  margin: 0 20px;
 }
 
 footer .line{
@@ -442,13 +468,22 @@ footer .line{
   margin-right: 5px;
   align-items: center;
   justify-content: flex-end;
-
 }
 
 .menu-right .line{
+  background-color: rgb(72,72,72);
   width:50%;
   height:5px;
   align-items: flex-end;
+}
+
+.menu-right .line:hover .now-playing-line{
+  background-color: #2CFF00;
+}
+
+.menu-right .line:hover .now-playing-dot{
+  display: block;
+  cursor: pointer;
 }
 
 .currently-playing-info h6:hover{
