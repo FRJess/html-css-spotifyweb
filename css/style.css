@@ -169,7 +169,6 @@ margin: 20px 0 12px 0;
   vertical-align: middle;
 } */
 
-
 .sidenav .nav-mobile{
   display: none;
 }
@@ -295,7 +294,7 @@ footer{
   height: 100%;
   min-width: 40%;
   padding: 24px 0;
-  margin-left: 10px;
+  margin-left: 14px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -306,6 +305,51 @@ footer{
   justify-content: flex-start;
   margin:5px;
 }
+
+.menu-center{
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+
+.menu-center .player-option{
+  margin:0 auto 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+
+}
+
+footer .song-playing{
+  justify-content: space-around;
+  align-items: center;
+  height:1rem;
+}
+
+.menu-center .line{
+  width:80%;
+  height:5px;
+}
+
+footer .line{
+  background-color: white;
+  border-radius:4px;
+}
+
+.menu-right{
+  width: 15%;
+  font-size: 1rem;
+  margin-right: 5px;
+  align-items: center;
+}
+
+.menu-right .line{
+  width:80%;
+  height:5px;
+}
+
+  
 
 /************************************************
      RESPONSIVE
