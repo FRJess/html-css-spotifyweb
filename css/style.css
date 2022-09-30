@@ -228,13 +228,13 @@ header button{
   margin: 0 8px 8px 0
 }
 
-.card.album{
+/* .card.album{
   height: 310px;
 }
 
-.col.playlist{
+.card.playlist{
   height: 220px
-}
+} */
 
 .card{
   width: 100%;
