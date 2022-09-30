@@ -16,7 +16,7 @@ body{
 
 main{
   height: calc(100vh - 180px) ;
-  overflow:scroll;
+  overflow-y:scroll;
   background-color: #141922;
 }
 
@@ -504,18 +504,9 @@ footer .line{
   .row{
     flex-wrap: wrap
   }
-
-  body{
-    background-color: violet;
-  }
-
 }
 
 @media screen and (max-width: 600px) {
-
-  body{
-    background-color: green;
-  }
 
   .col-mb-50{
     width: calc(100%/2 - 10px);
@@ -556,7 +547,6 @@ footer .line{
 
   .sidenav{
     width: 50px;
-    background-color: blue;
   }
 
   .sidenav .nav-mobile{
