@@ -278,7 +278,7 @@ footer{
 .menu-left{
   height: 100%;
   align-items: center;
-  width:20%;
+  width:230px;
   flex-wrap: nowrap;
 }
 
@@ -302,8 +302,10 @@ footer{
   align-items: flex-start;
 }
 
-.menu-left .currently-playing-info h5, h6{
-
+.menu-left .currently-playing-icon i{
+  width: 1rem;
+  justify-content: flex-start;
+  margin:5px;
 }
 
 /************************************************
