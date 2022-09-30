@@ -26,7 +26,10 @@ img{
 
 a{
   text-decoration: none;
-  color: white;
+}
+
+a:hover a:active{
+  color: red;
 }
 
 ul{
@@ -43,7 +46,7 @@ h4{
 
 h6{
   font-size:.9rem;
-  color: #717171;
+  color: #7D7F84;
 }
 
 i{
@@ -93,9 +96,9 @@ i{
   flex-direction: column;
 }
 
-.sidenav .nav-desktop{
+/* .sidenav .nav-desktop{
   margin-left: 20px;
-}
+} */
 
 .sidenav .nav-desktop ul li{
   margin-bottom: 10px;
@@ -110,12 +113,25 @@ i{
 
 .sidenav .nav-desktop .logo {
   height: 90px;
+  padding-left: 15px;
+}
+.sidenav .nav-desktop-top ul li{
+  padding-left: 15px;
+  border-left: 3px solid #080B12;
+}
+
+.sidenav .nav-desktop-top ul li:hover, .sidenav .nav-desktop-top ul li:active{
+  border-left: 3px solid #BBFF5A;
 }
 
 .sidenav .nav-desktop .logo img{
   width: 80%;
   vertical-align: middle;
   padding-top: 10px;
+}
+
+.sidenav .nav-desktop-playlist{
+  padding-left: 15px;
 }
 
 .sidenav .nav-desktop-playlist ul{
@@ -134,7 +150,7 @@ i{
 }
 
 .sidenav-bottom{
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .sidenav-bottom a{
@@ -188,12 +204,20 @@ header{
 
 header button{
   background-color: Transparent;
-  color: white;
   border: 1px solid white;
   padding: 12px 40px;
   border-radius: 40px;
   text-decoration: none;
-  margin-right: 6px;
+  margin-right: 16px;
+  transition: all .4s;
+}
+
+header button:hover{
+  transform: scale(1.1);
+}
+
+header button h6{
+  color: white;
 }
 
 /* main */
@@ -219,6 +243,18 @@ header button{
   line-height: 20px;
   text-transform: uppercase;
  }
+
+ .menu ul li::after{
+  content: ' ';
+  display: block;
+  border-bottom:2px solid #141922;
+}
+
+ .menu ul li:hover, .menu ul li:active{
+  content: ' ';
+  display: block;
+  border-bottom: 2px solid #BBFF5A;
+}
 
 .container{
   width: 100%;
