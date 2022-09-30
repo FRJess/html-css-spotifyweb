@@ -43,6 +43,7 @@ h4{
 
 h6{
   font-size:.9rem;
+  color: #717171;
 }
 
 i{
@@ -123,11 +124,13 @@ i{
 }
 
 .sidenav .nav-desktop-playlist .list-name{
-margin: 20px 0 12px 0;
+  margin: 20px 0 12px 0;
+  color: white;
 }
 
 .sidenav .nav-desktop-playlist h4{
   margin-bottom: 20px;
+  color: #717171;
 }
 
 .sidenav-bottom{
@@ -156,6 +159,10 @@ margin: 20px 0 12px 0;
   height: 2rem;
 }
 
+.sidenav-bottom .my-profile h6{
+  color: white;
+}
+
 .sidenav-bottom .download-app::after{
   content: ' ';
   display: block;
@@ -174,6 +181,7 @@ margin: 20px 0 12px 0;
 }
 
 /* header */
+
 header{
   /* top:0;
   right: 0px; */
@@ -196,10 +204,12 @@ header button{
 /* main */
 
 .menu{
-  height: 60px;
+  height: 70px;
   width: 100%;
   justify-content: center;
+  align-items: center;
   margin-bottom: 35px;
+  color: #717171;
 }
 
 .menu ul{
